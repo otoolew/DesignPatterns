@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DesignPatterns.DecoratorPattern
 {
-    class WhippedCream : CondimentDecorator
+    public class WhippedCream : CondimentDecorator
     {
         Beverage _Beverage;
         public WhippedCream(Beverage beverage)

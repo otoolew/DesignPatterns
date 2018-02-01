@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DesignPatterns.DecoratorPattern
 {
-    class HouseBlend : Beverage
+    public class HouseBlend : Beverage
     {
         
         public override string GetDescription()

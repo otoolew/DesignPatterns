@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DesignPatterns.DecoratorPattern
 {
-    class Espresso : Beverage
+    public class Espresso : Beverage
     {
         public override float Cost()
         {

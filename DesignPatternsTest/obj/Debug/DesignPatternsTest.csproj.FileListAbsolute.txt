@@ -1,0 +1,16 @@
+C:\Users\william.otoole\Desktop\CodeProjects\DesignPatterns\DesignPatternsTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\william.otoole\Desktop\CodeProjects\DesignPatterns\DesignPatternsTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\william.otoole\Desktop\CodeProjects\DesignPatterns\DesignPatternsTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\william.otoole\Desktop\CodeProjects\DesignPatterns\DesignPatternsTest\bin\Debug\DesignPatternsTest.dll
+C:\Users\william.otoole\Desktop\CodeProjects\DesignPatterns\DesignPatternsTest\bin\Debug\DesignPatternsTest.pdb
+C:\Users\william.otoole\Desktop\CodeProjects\DesignPatterns\DesignPatternsTest\bin\Debug\DesignPatterns.exe
+C:\Users\william.otoole\Desktop\CodeProjects\DesignPatterns\DesignPatternsTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\william.otoole\Desktop\CodeProjects\DesignPatterns\DesignPatternsTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\william.otoole\Desktop\CodeProjects\DesignPatterns\DesignPatternsTest\bin\Debug\DesignPatterns.pdb
+C:\Users\william.otoole\Desktop\CodeProjects\DesignPatterns\DesignPatternsTest\bin\Debug\DesignPatterns.exe.config
+C:\Users\william.otoole\Desktop\CodeProjects\DesignPatterns\DesignPatternsTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\william.otoole\Desktop\CodeProjects\DesignPatterns\DesignPatternsTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\william.otoole\Desktop\CodeProjects\DesignPatterns\DesignPatternsTest\obj\Debug\DesignPatternsTest.csprojResolveAssemblyReference.cache
+C:\Users\william.otoole\Desktop\CodeProjects\DesignPatterns\DesignPatternsTest\obj\Debug\DesignPatternsTest.csproj.CoreCompileInputs.cache
+C:\Users\william.otoole\Desktop\CodeProjects\DesignPatterns\DesignPatternsTest\obj\Debug\DesignPatternsTest.dll
+C:\Users\william.otoole\Desktop\CodeProjects\DesignPatterns\DesignPatternsTest\obj\Debug\DesignPatternsTest.pdb
