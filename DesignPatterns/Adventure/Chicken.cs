@@ -12,22 +12,7 @@ namespace DesignPatterns.Adventure
         {
         }
 
-        public override void AddHealthPoints(int amount)
-        {
-            throw new NotImplementedException();
-        }
-
         public override void DefensiveAction()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override int GetHealthPoints()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void SubtractHealthPoints(int amount)
         {
             throw new NotImplementedException();
         }

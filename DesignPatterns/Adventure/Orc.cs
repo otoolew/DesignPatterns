@@ -8,10 +8,10 @@ namespace DesignPatterns.Adventure
 {
     public class Orc : Actor
     {
-        Health _healthBehavior = new Health(100);  
+        HealthComponent _healthBehavior = new HealthComponent(100);  
         IDefend DefendBehavior = new OrcDefenseBehavior();
 
-        public Orc(string name, int health, int atk, int def) : base(name, atk, def)
+        public Orc(string name, int atk, int def) : base(name, atk, def)
         {
         }
         public override int GetHealthPoints()

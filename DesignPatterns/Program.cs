@@ -17,17 +17,8 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            Actor player = new Human("Bill", 10, 3);
-            
-            Actor orcEnemy = new Orc("Orc", 100, 10, 3);
 
-
-
-            // Using the delegate                                               Method HERE!
-            AttackPerformedHandler attackDelegate = new AttackPerformedHandler(AttackPerformed);
-            attackDelegate(player, orcEnemy);
-            attackDelegate(orcEnemy, player);
-            
+            PerformPolyMorphism();
             //PerformSimpleAction();
             //ShowEventPattern();
             //ShowObserverPattern();
@@ -91,7 +82,12 @@ namespace DesignPatterns
         }
         public static void PerformPolyMorphism()
         {
-
+            Actor player = new Human("Knight", 10, 3);
+            Actor orcEnemy = new Orc("Orc", 7, 2);
+            // Using the delegate                                               Method HERE!
+            AttackPerformedHandler attackDelegate = new AttackPerformedHandler(AttackPerformed);
+            attackDelegate(player, orcEnemy);
+            attackDelegate(orcEnemy, player);
         }
 
 

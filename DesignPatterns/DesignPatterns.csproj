@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="Adventure\Actor.cs" />
     <Compile Include="Adventure\Chicken.cs" />
-    <Compile Include="Adventure\Health.cs" />
+    <Compile Include="Adventure\HealthComponent.cs" />
     <Compile Include="Adventure\Human.cs" />
     <Compile Include="Adventure\HumanDefenseBehavior.cs" />
     <Compile Include="Adventure\IAttack.cs" />

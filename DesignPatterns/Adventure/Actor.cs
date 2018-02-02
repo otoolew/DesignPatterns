@@ -31,7 +31,7 @@ namespace DesignPatterns.Adventure
 
         public int Strength { get; set; }
         public int Defense { get; set; }
-        
+        public HealthComponent _healthBehavior = new HealthComponent(100);
 
         /// <summary>
         /// Class Constructor
@@ -45,12 +45,22 @@ namespace DesignPatterns.Adventure
             Strength = atk;
             Defense = def;
         }
+
+        public virtual int GetHealthPoints()
+        {
+            return _healthBehavior.Points;
+        }
+
+        public virtual void SubtractHealthPoints(int amount)
+        {
+            _healthBehavior.Points -= amount;
+        }
+
+        public virtual void AddHealthPoints(int amount)
+        {
+            _healthBehavior.Points -= amount;
+        }
         public abstract void DefensiveAction();
-        public abstract int GetHealthPoints();
-        public abstract void SubtractHealthPoints(int amount);
-        public abstract void AddHealthPoints(int amount);
 
-
-
-    }
+     }
 }
