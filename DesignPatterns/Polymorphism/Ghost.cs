@@ -6,7 +6,7 @@ namespace DesignPatterns.C1Intro
 {
     class Ghost
     {
-        delegate IFlyBehavior Flying();
+        //delegate IFlyBehavior Flying();
         IFlyBehavior FlyBehavior;
 
         public Ghost()
@@ -14,8 +14,7 @@ namespace DesignPatterns.C1Intro
             FlyBehavior = new FlyWithMagic();
         }
         public void StartFlying()
-        {
-            
+        {          
             FlyBehavior.Fly();
         }
     }

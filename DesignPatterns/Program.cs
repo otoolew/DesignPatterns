@@ -3,27 +3,47 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DesignPatterns.Adventure;
 using DesignPatterns.DecoratorPattern;
 using DesignPatterns.EventPattern;
 using DesignPatterns.ObserverPattern;
 
 namespace DesignPatterns
 {
+    // Adventure Delegate
+    public delegate void AttackPerformedHandler(Actor attacker, Actor defender);
+
     class Program
     {
         static void Main(string[] args)
         {
-            Action<string> messageTarget;
+            Actor player = new Human("Bill", 10, 3);
+            
+            Actor orcEnemy = new Orc("Orc", 100, 10, 3);
 
-            messageTarget = Console.WriteLine;
-            messageTarget("Invoking Action!");
+
+
+            // Using the delegate                                               Method HERE!
+            AttackPerformedHandler attackDelegate = new AttackPerformedHandler(AttackPerformed);
+            attackDelegate(player, orcEnemy);
+            attackDelegate(orcEnemy, player);
+            
+            //PerformSimpleAction();
             //ShowEventPattern();
             //ShowObserverPattern();
             //ShowDecoratorPattern();
             ShowEnd();
         }
-
-
+        // Attack Delegate Metho
+        public static void AttackPerformed(Actor attacker, Actor defender)
+        {
+            int damage = attacker.Strength - defender.Defense;                          
+            defender.DefensiveAction();
+            defender.SubtractHealthPoints(damage);
+            defender.GetHealthPoints();
+            Console.WriteLine(defender.Name + " was hit for " + damage + " damage.");
+            Console.WriteLine(defender.Name + " now has " + defender.GetHealthPoints() + " HP.");
+        }
         public static void Worker_WorkPerformed(object sender, WorkPerformedEventArgs e)
         {
             Console.WriteLine(e.WorkType + " for " + e.Hours + " Hour(s)");
@@ -63,6 +83,18 @@ namespace DesignPatterns
             worker.WorkCompleted += new EventHandler(Worker_WorkCompleted);
             worker.DoWork(3, WorkType.CutGrass); // WOW using void method in a static method!
         }
+        public static void PerformSimpleAction()
+        {
+            Action<string> messageTarget;
+            messageTarget = Console.WriteLine;
+            messageTarget("Invoking Action!");
+        }
+        public static void PerformPolyMorphism()
+        {
+
+        }
+
+
         public static void ShowEnd()
         {
             // End of Program

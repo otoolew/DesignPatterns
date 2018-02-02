@@ -42,6 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adventure\Actor.cs" />
+    <Compile Include="Adventure\Chicken.cs" />
+    <Compile Include="Adventure\Health.cs" />
+    <Compile Include="Adventure\Human.cs" />
+    <Compile Include="Adventure\HumanDefenseBehavior.cs" />
+    <Compile Include="Adventure\IAttack.cs" />
+    <Compile Include="Adventure\IDefend.cs" />
+    <Compile Include="Adventure\Orc.cs" />
+    <Compile Include="Adventure\OrcDefenseBehavior.cs" />
     <Compile Include="DecoratorPattern\Beverage.cs" />
     <Compile Include="DecoratorPattern\CondimentDecorator.cs" />
     <Compile Include="DecoratorPattern\Espresso.cs" />
